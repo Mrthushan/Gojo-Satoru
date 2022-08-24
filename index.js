@@ -178,7 +178,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
         }
     })
 
-    GojoMdNx.getName = (jid, withoutContact  = false) => {
+    GojoMdNx.getName = (jid, withoutContact  = true) => {
         id = GojoMdNx.decodeJid(jid)
         withoutContact = GojoMdNx.withoutContact || withoutContact 
         let v
@@ -201,7 +201,7 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await GojoMdNx.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${ownername}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:${sc}\nitem2.X-ABLabel:Script\nitem3.URL:${myweb}\nitem3.X-ABLabel:Script\nitem4.ADR:;;${region};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${🔥༺𝐓.𝐒♡𝐓𝐇𝐔𝐒𝐇𝐀𝐍♡BOT♡༻🔥}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click To Chat\nitem2.EMAIL;type=INTERNET:${sc}\nitem2.X-ABLabel:Script\nitem3.URL:${myweb}\nitem3.X-ABLabel:Script\nitem4.ADR:;;${region};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	GojoMdNx.sendMessage(jid, { contacts: { displayName: `${list.length} Contact`, contacts: list }, ...opts }, { quoted })
